@@ -9,11 +9,13 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.8
-  extended_svg_picture: ^1.0.0
+
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
+  flutter_svg: ^2.2.1
   get_it: ^8.2.0
+  go_router: ^16.2.4
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.4
@@ -24,6 +26,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/images/svgs/
     - assets/images/
 
 # 👇 ضع إعدادات الأيقونة هنا (خارج flutter:)
@@ -32,3 +35,9 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/images/logo.png"
   min_sdk_android: 21
+
+flutter_assets:
+  assets_path: assets/images/svgs/
+  output_path: lib/core/utils/
+  filename: app_images.dart
+  field_prefix: null

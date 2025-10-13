@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whats_app_clone/core/helper_functions/on_generate_route.dart';
+import 'package:whats_app_clone/features/splash/presentation/view/splash_view_one.dart';
 
 void main() {
   runApp(const WhatsAppClone());
@@ -10,8 +12,9 @@ class WhatsAppClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center(child: Text('WhatsApp Clone Home Screen'))),
+      initialRoute: SplashViewOne.route,
     );
   }
 }
