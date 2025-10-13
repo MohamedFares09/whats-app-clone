@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:whats_app_clone/constants.dart';
@@ -39,7 +38,7 @@ class SplashViewBody extends StatelessWidget {
             builder: (context, value, _) => CircularProgressIndicator(
               value: value,
               strokeWidth: 10,
-              backgroundColor: Colors.teal.withOpacity(0.2),
+              backgroundColor: Colors.teal.withValues(alpha: 0.2),
               valueColor: AlwaysStoppedAnimation(Colors.teal),
             ),
           ),

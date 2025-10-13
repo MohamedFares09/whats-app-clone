@@ -6,7 +6,6 @@ import 'package:whats_app_clone/features/splash/presentation/view/splash_view_tw
 
 class SplashViewOneBody extends StatefulWidget {
   const SplashViewOneBody({super.key});
-  
 
   @override
   State<SplashViewOneBody> createState() => _SplashViewOneBodyState();
@@ -18,16 +17,18 @@ class _SplashViewOneBodyState extends State<SplashViewOneBody> {
     navigateToNextScreen();
     super.initState();
   }
+
   Future<void> navigateToNextScreen() async {
     await Future.delayed(Duration(seconds: 3));
     if (!mounted) return;
     Navigator.pushReplacementNamed(context, SplashViewTwo.route);
   }
+
   @override
   void dispose() {
-    
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -52,9 +53,22 @@ class _SplashViewOneBodyState extends State<SplashViewOneBody> {
           ],
         ),
         Spacer(),
-        Text('form', style: AppTextStyle.regular13),
-        Text('Facebook', style: AppTextStyle.regular15),
+        TextFormAndFacebook(),
         SizedBox(height: 65),
+      ],
+    );
+  }
+}
+
+class TextFormAndFacebook extends StatelessWidget {
+  const TextFormAndFacebook({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('form', style: AppTextStyle.regular13),
+        Text('FACEBOOK', style: AppTextStyle.regular15),
       ],
     );
   }
