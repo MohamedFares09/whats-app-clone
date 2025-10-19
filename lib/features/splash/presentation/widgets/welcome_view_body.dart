@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/constants.dart';
-
 import 'package:whats_app_clone/core/utils/app_text_style.dart';
-import 'package:whats_app_clone/features/splash/presentation/widgets/splash_view_one_body.dart';
 import 'package:whats_app_clone/features/splash/presentation/widgets/terms_text.dart';
+import 'package:whats_app_clone/features/splash/presentation/widgets/text_form_and_facebook.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({super.key});

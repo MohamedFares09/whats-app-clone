@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:whats_app_clone/core/utils/app_images.dart';
 import 'package:whats_app_clone/core/utils/app_text_style.dart';
 import 'package:whats_app_clone/features/splash/presentation/view/splash_view_two.dart';
+import 'package:whats_app_clone/features/splash/presentation/widgets/text_form_and_facebook.dart';
 
 class SplashViewOneBody extends StatefulWidget {
   const SplashViewOneBody({super.key});
@@ -55,20 +56,6 @@ class _SplashViewOneBodyState extends State<SplashViewOneBody> {
         Spacer(),
         TextFormAndFacebook(),
         SizedBox(height: 65),
-      ],
-    );
-  }
-}
-
-class TextFormAndFacebook extends StatelessWidget {
-  const TextFormAndFacebook({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text('form', style: AppTextStyle.regular13),
-        Text('FACEBOOK', style: AppTextStyle.regular15),
       ],
     );
   }
