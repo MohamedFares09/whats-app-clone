@@ -21,6 +21,11 @@ abstract class AppTextStyle {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
+    static const TextStyle medaium20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
   static const TextStyle regular15 = TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.w400,
