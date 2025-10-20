@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
+
 class PhoneInputScreen extends StatelessWidget {
-  const PhoneInputScreen({super.key});
+  const PhoneInputScreen({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +13,13 @@ class PhoneInputScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           IntlPhoneField(
+            
             decoration: const InputDecoration(
               border: UnderlineInputBorder(borderSide: BorderSide()),
             ),
             initialCountryCode: 'EG', // الدولة الافتراضية (India)
             onChanged: (phone) {
-              print(phone.completeNumber); // +91xxxxxxxxx
+              print(phone.completeNumber);
             },
           ),
           const SizedBox(height: 8),

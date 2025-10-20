@@ -3,9 +3,10 @@ import 'package:whats_app_clone/constants.dart';
 import 'package:whats_app_clone/core/utils/app_text_style.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, this.text, this.onPressed});
+  const CustomButton({super.key, this.text, this.onPressed , this.style});
   final String? text;
   final void Function()? onPressed;
+  final TextStyle? style;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +19,7 @@ class CustomButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           text ?? 'Enter a Text Button',
-          style: AppTextStyle.regular15,
+          style:style ?? AppTextStyle.regular15,
         ),
       ),
     );

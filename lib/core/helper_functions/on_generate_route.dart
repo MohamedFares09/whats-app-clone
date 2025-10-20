@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/features/auth/presentation/view/login_view.dart';
+import 'package:whats_app_clone/features/auth/presentation/view/otp_view.dart';
 import 'package:whats_app_clone/features/splash/presentation/view/splash_view_one.dart';
 import 'package:whats_app_clone/features/splash/presentation/view/splash_view_two.dart';
 import 'package:whats_app_clone/features/splash/presentation/view/welcome_view.dart';
@@ -29,6 +30,12 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) {
           return const LoginView();
+        },
+      );
+    case OtpView.route:
+      return MaterialPageRoute(
+        builder: (context) {
+          return const OtpView();
         },
       );
 

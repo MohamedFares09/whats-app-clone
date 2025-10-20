@@ -1,8 +1,11 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/core/helper_functions/on_generate_route.dart';
 import 'package:whats_app_clone/features/splash/presentation/view/splash_view_one.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(const WhatsAppClone());
 }
 

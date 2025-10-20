@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088949057873",
+    "project_id": "fx-chat-f14ee",
+    "storage_bucket": "fx-chat-f14ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088949057873:android:bb386cc92add1c94c67b70",
+        "android_client_info": {
+          "package_name": "com.example.whats_app_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCijxrf0_C0mHAUUCOkee03i9cVmQq0SMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

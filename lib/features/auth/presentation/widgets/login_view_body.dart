@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/core/utils/app_text_style.dart';
 import 'package:whats_app_clone/core/widgets/custom_button.dart';
+import 'package:whats_app_clone/features/auth/presentation/view/otp_view.dart';
 import 'package:whats_app_clone/features/auth/presentation/widgets/phone_input_screen.dart';
 import 'package:whats_app_clone/features/auth/presentation/widgets/text_verefiy_phone_number.dart';
 
@@ -13,7 +14,6 @@ class LoginViewBody extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            // 🟢 المحتوى القابل للتمرير
             SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 54),
               child: Column(
@@ -41,12 +41,21 @@ class LoginViewBody extends StatelessWidget {
               ),
             ),
 
-            // 🟢 الزر الثابت في الأسفل
             Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: const EdgeInsets.only(bottom: 56, left: 54, right: 54),
-                child: const CustomButton(text: 'Next'),
+                padding: const EdgeInsets.only(
+                  bottom: 56,
+                  left: 177,
+                  right: 177,
+                ),
+                child: CustomButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, OtpView.route);
+                  },
+                  text: 'Next',
+                  style: AppTextStyle.semiblod11,
+                ),
               ),
             ),
           ],
